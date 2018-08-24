@@ -6,7 +6,7 @@
   <remote name="couchbaselabs" fetch="git://github.com/couchbaselabs/" review="review.couchbase.org"/>
   <remote name="blevesearch" fetch="git://github.com/blevesearch/"/>
   <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org"/>
-  <remote name="ankit" fetch="git://github.com/AnkitPrabhu/">
+  <remote name="ankit" fetch="git://github.com/AnkitPrabhu/"/>
 
   <default remote="couchbase" revision="master"/>
 
@@ -41,7 +41,7 @@
   <project name="sigar" groups="kv" revision="73353fe6dad8f3d67409feefb9b17f90f6de917b"/>
   <project name="subjson" groups="kv" revision="c30c3d4c250e68e81c57aa1e8ae91ffd21243cdb"/>
   <project name="testrunner" revision="vulcan"/>
-  <project name="tlm" revision="1721f830d767bf309f93f4e0ccf40d17bc3a3259" remote="ankit" groups="kv">
+  <project name="tlm" revision="1721f830d767bf309f93f4e0ccf40d17bc3a3259" remote="ankit" groups="kv"/>
     <copyfile src="GNUmakefile" dest="GNUmakefile"/>
     <copyfile src="Makefile" dest="Makefile"/>
     <copyfile src="CMakeLists.txt" dest="CMakeLists.txt"/>
