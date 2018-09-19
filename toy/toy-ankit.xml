@@ -5,8 +5,7 @@
   <remote name="couchbasedeps" fetch="git://github.com/couchbasedeps/" review="review.couchbase.org"/>
   <remote name="couchbaselabs" fetch="git://github.com/couchbaselabs/" review="review.couchbase.org"/>
   <remote name="blevesearch" fetch="git://github.com/blevesearch/"/>
-  <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org"/>
-  <remote name="ankit" fetch="git://github.com/AnkitPrabhu/" />
+ <remote name="ankit" fetch="git://github.com/AnkitPrabhu/" />
   <default remote="couchbase" revision="master"/>
 
   <!-- Core Couchbase Server projects -->
@@ -16,14 +15,14 @@
   <project name="cbq-gui" remote="couchbase-priv" path="goproj/src/github.com/couchbase/cbq-gui" groups="notdefault,enterprise" revision="c6d20e7ad03b19163a2f93da48170a1724a55e19"/>
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="dbfa1c0d73f0e49f6f04e390f03de8f9a6cee769"/>
   <project name="couch_rocks" remote="couchbase-priv" groups="notdefault,kv_ee,enterprise" revision="75f37fa46bfe5e445dee077157303968a3e09126"/>
-  <project name="couchbase-cli" revision="6acf250ac8a22d30496e3cb857af2aa4b40192b3"/>
-  <project name="couchdb" revision="vulcan"/>
+  <project name="couchbase-cli" revision="vulcan"/>
+  <project name="couchdb" revision="02a8b28c93ef19f5e6f0331e4ed74a347064b0c7" remote="ankit"/>
   <project name="couchstore" groups="kv" revision="vulcan"/>
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" revision="05067021a042a1b63e100a486afd7ebddab4c535"/>
   <project name="forestdb" revision="vulcan" groups="kv"/>
   <project name="geocouch" revision="2a0e73f43451045f157640eec59ced72da18471f"/>
   <project name="goxdcr" path="goproj/src/github.com/couchbase/goxdcr" revision="vulcan"/>
-  <project name="gometa" path="goproj/src/github.com/couchbase/gometa" revision="df22eb995051c99d2417db1f424d0c08994e828f"/>
+  <project name="gometa" path="goproj/src/github.com/couchbase/gometa" revision="vulcan"/>
   <project name="nitro" path="goproj/src/github.com/couchbase/nitro" revision="f3bef3551997be504612a2d05a8b324b3bfdfe1b"/>
   <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="vulcan"/>
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" groups="notdefault,enterprise" revision="vulcan"/>
@@ -40,7 +39,7 @@
   <project name="sigar" groups="kv" revision="73353fe6dad8f3d67409feefb9b17f90f6de917b"/>
   <project name="subjson" groups="kv" revision="c30c3d4c250e68e81c57aa1e8ae91ffd21243cdb"/>
   <project name="testrunner" revision="vulcan"/>
-  <project name="tlm" revision="298d77cd5addef5f86dbe90795592f06dce59314" remote="ankit" groups="kv">
+  <project name="tlm" revision="vulcan" groups="kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile"/>
     <copyfile src="Makefile" dest="Makefile"/>
     <copyfile src="CMakeLists.txt" dest="CMakeLists.txt"/>
@@ -48,10 +47,10 @@
     <copyfile src="third-party-CMakeLists.txt" dest="third_party/CMakeLists.txt"/>
   </project>
   <!-- Analytics additions -->
-  <project name="asterix-opt" path="analytics" revision="vulcan" remote="couchbaselabs-priv" groups="notdefault,enterprise,analytics"/>
+  <project name="asterix-opt" path="analytics" revision="vulcan" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
   <project name="asterixdb" path="analytics/asterixdb" revision="vulcan" groups="notdefault,enterprise,analytics"/>
-  <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="vulcan" remote="couchbaselabs" groups="notdefault,enterprise,analytics"/>
-  <project name="cbas" path="goproj/src/github.com/couchbaselabs/cbas" revision="vulcan" remote="couchbaselabs" groups="notdefault,enterprise,analytics"/>
+  <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="vulcan" groups="notdefault,enterprise,analytics"/>
+  <project name="cbas" path="goproj/src/github.com/couchbaselabs/cbas" revision="vulcan" groups="notdefault,enterprise,analytics"/>
   <project name="cbas-ui" revision="vulcan" groups="analytics"/> <!-- leave as non-enterprise temporarily, until the UI integration is handling CE correctly -->
 
   <!-- Go support libraries - Couchbase-supported -->
