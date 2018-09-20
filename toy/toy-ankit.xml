@@ -40,7 +40,7 @@
   <project name="sigar" groups="kv" revision="73353fe6dad8f3d67409feefb9b17f90f6de917b"/>
   <project name="subjson" groups="kv" revision="c30c3d4c250e68e81c57aa1e8ae91ffd21243cdb"/>
   <project name="testrunner" revision="vulcan"/>
-  <project name="tlm" revision="f2196ab43f90b07e0924ba9eb8b7a9cb1f346527" remote="ankit" groups="kv">
+  <project name="tlm" revision="707c5cc619f25709e1884c4ff7b14f6883d759ba" remote="ankit" groups="kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile"/>
     <copyfile src="Makefile" dest="Makefile"/>
     <copyfile src="CMakeLists.txt" dest="CMakeLists.txt"/>
