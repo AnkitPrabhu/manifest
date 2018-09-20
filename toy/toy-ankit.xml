@@ -16,7 +16,7 @@
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="dbfa1c0d73f0e49f6f04e390f03de8f9a6cee769"/>
   <project name="couch_rocks" remote="couchbase-priv" groups="notdefault,kv_ee,enterprise" revision="75f37fa46bfe5e445dee077157303968a3e09126"/>
   <project name="couchbase-cli" revision="vulcan"/>
-  <project name="couchdb" revision="8c889e12cded99982697c75eb8c475874bf2d43b" remote="ankit"/>
+  <project name="couchdb" revision="Iecbd67182bebbcdf3d7ec35a590bb99ec4398e3b"/>
   <project name="couchstore" groups="kv" revision="vulcan"/>
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" revision="05067021a042a1b63e100a486afd7ebddab4c535"/>
   <project name="forestdb" revision="vulcan" groups="kv"/>
@@ -39,7 +39,7 @@
   <project name="sigar" groups="kv" revision="73353fe6dad8f3d67409feefb9b17f90f6de917b"/>
   <project name="subjson" groups="kv" revision="c30c3d4c250e68e81c57aa1e8ae91ffd21243cdb"/>
   <project name="testrunner" revision="vulcan"/>
-  <project name="tlm" revision="vulcan" groups="kv">
+  <project name="tlm" revision="Ic5a3647d7a07555059e9c2461b6a5a9dfa0b387e" groups="kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile"/>
     <copyfile src="Makefile" dest="Makefile"/>
     <copyfile src="CMakeLists.txt" dest="CMakeLists.txt"/>
